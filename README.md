@@ -1,7 +1,7 @@
 # Projeto-responsivo-css
 
 
-Este é um pequeno projeto criado para práticar páginas responsivas ultilizando apenas HTML e CSS para usar como portifólio
+Este é um pequeno projeto criado para práticar páginas responsivas ultilizando apenas HTML e CSS para usar como portifólio,
 No mesmo ultilizei Sass a forma de organizar e escrever fica mais facíl, mesmo sendo um projeto muito pequeno usei para me manter familiarizado com a ferramenta
 
 Este projeto está adptado para dispositivos Mobile pequenos até grandes telas Desktop usando media query.
