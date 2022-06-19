@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gruppo&family=Orbitron&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-size: 20px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+}
+
+.logo-navbar {
+  width: 180px;
+}
+
+.header-btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  font-family: "Gruppo", arial;
+  font-size: 20px;
+  padding: 30px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.nav-btn:hover {
+  border-bottom: 2px solid #EB8712;
+}
+
+.section-title {
+  font-size: 100px;
+  text-decoration: underline #EB8712;
+  font-family: "Black Ops One", arial;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section-description {
+  font-family: "Gruppo", arial;
+  text-align: center;
+  color: #7E7D7F;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "main-content sidebar-content";
+  padding: 20px;
+  flex: 1 0 auto;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: "main-content";
+}
+
+.category-card {
+  width: 280px;
+  height: 380px;
+  background-color: rgb(255, 255, 255);
+  color: #292929;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.category-card:hover {
+  border-color: #EB8712;
+}
+
+.maincard-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.main-category-cardTitle {
+  font-family: "Black Ops One", arial;
+  padding: 6px;
+  text-align: center;
+}
+
+.main-category-cardDescription {
+  font-size: 16px;
+  padding: 6px;
+}
+
+.sidebar-content {
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  gap: 20px;
+  border-radius: 5px 10px 5px 10px;
+}
+
+.sidebar-card {
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidebar-card:hover {
+  border-color: #7E7D7F;
+}
+
+.sidebar-title {
+  font-family: "Black Ops One", arial;
+  font-size: 25PX;
+}
+
+.sidebar-cardImg {
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.sidebar-cardTitle {
+  font-family: "Gruppo", arial;
+  font-size: 30px;
+  text-align: center;
+  padding: 6px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.logo-footer {
+  width: 180px;
+}
+
+.social-media {
+  width: 30px;
+  padding: 10px;
+}
+
+.to-top {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  padding-top: 1.8em;
+  display: inline-block;
+  /* or block */
+  position: relative;
+  border-color: #7E7D7F;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em #7E7D7F;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+
+.to-top:hover {
+  color: #EB8712;
+  border-color: #EB8712;
+}
+
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 605px) {
+  .header {
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .section-title {
+    font-size: 80px;
+  }
+
+  .grid-container {
+    grid-template-areas: "main-content" "sidebar-content";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sidebar-content {
+    min-width: auto;
+  }
+}
+@media (max-width: 440px) {
+  .section-title {
+    font-size: 56px;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+}
+.carousel {
+  width: 1200px;
+  margin: 4em auto;
+  position: relative;
+  box-shadow: 0px 1px 6px #292929;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: #7E7D7F;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+  user-select: none;
+}
+
+.carousel-control.next {
+  right: 2%;
+  user-select: none;
+}
+
+.carousel-control:hover {
+  background: #EB8712;
+  color: rgb(255, 255, 255);
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #292929;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+  padding: 0 10px;
+}
+
+.carousel-bullet:hover {
+  color: #7E7D7F;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #EB8712;
+}
+
+@media (max-width: 1260px) {
+  .carousel {
+    width: 99%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

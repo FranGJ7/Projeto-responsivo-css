@@ -1,0 +1,261 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-size: 20px;
+} 
+
+
+
+.container{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-color:$white;
+}
+
+.header{
+    width: 100%;
+    min-height: 40px;
+    background-color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap : wrap;  
+    gap: 8px 15px;    
+}
+
+.logo-navbar{
+    width: 180px;
+}
+
+.header-btn-group{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn{
+    font-family: $secundary-font;
+    font-size: 20px;
+    padding: 30px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        border-bottom: 2px solid $orange;
+    }
+}
+
+
+.section-title{
+    font-size: 100px;
+    text-decoration: underline $orange;
+    font-family:$main-font;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-description{
+    font-family: $secundary-font;
+    text-align: center;
+    color: $light-gray;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "main-content sidebar-content";
+    padding: 20px;
+    flex: 1 0 auto;
+
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: "main-content";
+}
+
+.category-card{
+    width: 280px;
+    height: 380px; 
+    background-color:$white;
+    color: $gray;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+       &:hover{
+        border-color: $orange;
+       }
+}
+
+.maincard-img{
+    width: 100%;
+    height: 180px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.main-category-cardTitle{
+    font-family:$main-font;
+    padding: 6px;
+    text-align: center;
+}
+
+.main-category-cardDescription{
+    font-size: 16px;
+    padding: 6px;
+}
+
+.sidebar-content{
+    background-color:$gray;
+    color:$white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    gap: 20px;
+    border-radius: 5px 10px 5px 10px;
+}
+
+.sidebar-card{
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius:7px;
+    transition: 0.5s;
+    cursor: pointer;
+       &:hover{
+        border-color:$light-gray;
+       }
+}
+
+.sidebar-title{
+    font-family:$main-font;
+    font-size: 25PX;
+}
+
+.sidebar-cardImg{
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.sidebar-cardTitle{
+    font-family: $secundary-font;
+    font-size: 30px;
+    text-align: center;
+    padding: 6px;
+}
+
+
+
+.footer{
+    width: 100%;
+    min-height: 40px;
+    background-color: $gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.logo-footer{
+    width: 180px;
+    
+}
+
+.social-media{
+    width: 30px;
+    padding: 10px;    
+}
+
+
+.to-top{
+	color:$white;
+    padding: 15px;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:$light-gray;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em $light-gray;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:$orange;
+	border-color:$orange;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+
+@media(max-width:605px){
+    .header{
+        justify-content: center;
+
+    }
+    .nav-btn{
+        padding: 10px;
+    }
+}
+
+
+@media(max-width:680px){
+    .section-title{
+        font-size: 80px;
+    }
+    .grid-container{
+     grid-template-areas: "main-content" "sidebar-content";
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+    }
+
+    .sidebar-content{
+        min-width: auto;
+    }
+ }
+
+ @media(max-width: 440px){
+    .section-title{
+        font-size: 56px;
+    }
+    .sidebar-title{
+        font-size: 20px;
+    }
+    .footer{
+        justify-content: center;
+    }
+
+ }
+
+ 
+
+
+
+
+
+

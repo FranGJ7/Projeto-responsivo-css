@@ -1,0 +1,116 @@
+
+.carousel {
+  width:1200px;
+  margin:4em auto;
+  position: relative;
+  box-shadow: 0px 1px 6px $gray;
+  
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease-out;
+    transition: opacity 0.7s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    max-width: 100%;
+    }
+
+.carousel-control {
+    background: $light-gray;
+    border-radius: 50%;
+    color: $white;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10; 
+}
+
+.carousel-control.prev {
+    left: 2%;
+  user-select: none;
+}
+
+.carousel-control.next {
+    right: 2%;
+  user-select: none;
+}
+
+.carousel-control:hover {
+    background: $orange;
+    color: $white;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: $gray;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  padding:0 10px;
+}
+
+.carousel-bullet:hover {
+    color: $light-gray;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: $orange;
+}
+
+
+@media(max-width:1260px){
+    .carousel{
+        width: 99%;
+    }
+}
+
+
