@@ -13,4 +13,4 @@ Todas imagens tirada da internet ultilizada apenas para estudo, em parte de tama
 não me procupei com tamanho de arquivo  e nem tipo, por que o objetivo é a responsividade, deixando claro saber tratar tamanho de arquivos de imagens resolusão
 e formato ideal para web.
 
-Obrigado.
+
