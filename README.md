@@ -1,4 +1,4 @@
-# Projeto-responsivo-css
+# Projeto-básico-responsivo-css
 
 
 Este é um pequeno projeto criado para práticar páginas responsivas ultilizando apenas HTML e CSS para usar como portifólio,
@@ -12,6 +12,9 @@ ainda mais se enfrentar grandes projetos isso pode ser muito útil.
 Todas imagens tirada da internet ultilizada apenas para estudo, em parte de tamanho de arquivo e tipo de imagens está bem variado não tratei nenhuma delas
 não me procupei com tamanho de arquivo  e nem tipo, por que o objetivo é a responsividade, deixando claro saber tratar tamanho de arquivos de imagens resolusão
 e formato ideal para web.
+
+Video em meu LinkedIn mostrando pouco mais sobre: https://www.linkedin.com/posts/fran-gj_ap%C3%B3s-um-tempo-de-estudo-na-onebitcode-vou-activity-6944387046505336832-N439?utm_source=share&utm_medium=member_desktop
+
 
 Imagem do projeto em Desktop:
 ![Screenshot from 2022-08-26 18-08-07](https://user-images.githubusercontent.com/97806169/186991671-ac00c9ec-af4b-4924-85ec-1c99ea35e417.png)
